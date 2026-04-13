@@ -1,4 +1,4 @@
-# TaskFlow — Task Management System
+# Task Management System
 
 A clean, scalable, production-ready Task Management System built with **Laravel 11** (REST API) and **React 18** (TypeScript + Tailwind CSS).
 
@@ -402,8 +402,3 @@ npm run build
 dist/
 ```
 
----
-
-## License
-
-MIT
