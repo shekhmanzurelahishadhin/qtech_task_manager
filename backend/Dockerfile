@@ -9,10 +9,10 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# 👉 Copy ONLY backend folder into container
-COPY backend/ /app
+# ✅ IMPORTANT FIX: copy CURRENT folder, NOT backend/
+COPY . .
 
-WORKDIR /app
+RUN ls -la
 
 RUN composer install
 
