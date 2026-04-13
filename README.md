@@ -401,4 +401,11 @@ npm run build
 # Publish directory:
 dist/
 ```
+## Live Link
+
+Base URL: `https://qtech-task-manager-v1.onrender.com/api/v1`
+Task List API: `https://qtech-task-manager-v1.onrender.com/api/v1/tasks`
+Frontend: `https://qtechtaskmanagerfrontend-9nd3t9apu.vercel.app/`
+
+All responses use `Content-Type: application/json`.
 
