@@ -9,10 +9,10 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# ✅ IMPORTANT FIX: copy CURRENT folder, NOT backend/
-COPY . .
+# 🔥 IMPORTANT: Laravel is inside backend folder
+COPY backend ./backend
 
-RUN ls -la
+WORKDIR /app/backend
 
 RUN composer install
 
