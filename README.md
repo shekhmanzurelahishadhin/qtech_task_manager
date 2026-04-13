@@ -1,8 +1,20 @@
-# Task Management System
+# Task Management Syste
 
 A clean, scalable, production-ready Task Management System built with **Laravel 11** (REST API) and **React 18** (TypeScript + Tailwind CSS).
 
 ---
+## Live Link
+
+- **Base API URL:**  
+  <a href="https://qtech-task-manager-v1.onrender.com/api/v1" target="_blank">https://qtech-task-manager-v1.onrender.com/api/v1</a>
+
+- **Task List API:**  
+  <a href="https://qtech-task-manager-v1.onrender.com/api/v1/tasks" target="_blank">https://qtech-task-manager-v1.onrender.com/api/v1/tasks</a>
+
+- **Frontend:**  
+  <a href="https://qtechtaskmanagerfrontend.vercel.app/" target="_blank">https://qtechtaskmanagerfrontend.vercel.app/</a>
+
+- **Content-Type:** `application/json`
 
 ## Table of Contents
 
@@ -401,11 +413,5 @@ npm run build
 # Publish directory:
 dist/
 ```
-## Live Link
 
-Base URL: `https://qtech-task-manager-v1.onrender.com/api/v1`
-Task List API: `https://qtech-task-manager-v1.onrender.com/api/v1/tasks`
-Frontend: `https://qtechtaskmanagerfrontend-9nd3t9apu.vercel.app/`
-
-All responses use `Content-Type: application/json`.
 
