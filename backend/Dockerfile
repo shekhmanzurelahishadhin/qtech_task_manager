@@ -9,16 +9,16 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# 🔥 COPY ENTIRE PROJECT
+# Copy full project
 COPY . .
 
-# 🔥 DEBUG (VERY IMPORTANT)
-RUN ls -la
+# Debug (optional but useful)
 RUN ls -la backend
 
-# 🔥 MOVE INTO LARAVEL PROJECT
+# Go into Laravel project
 WORKDIR /app/backend
 
+# Install dependencies in correct folder
 RUN composer install --no-interaction --prefer-dist
 
 EXPOSE 10000
