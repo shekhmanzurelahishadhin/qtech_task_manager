@@ -1,0 +1,28 @@
+# ─── Laravel ───────────────────────────────────────────────
+backend/.env
+backend/vendor/
+backend/node_modules/
+backend/storage/logs/*.log
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/
+backend/database/database.sqlite
+backend/.phpunit.result.cache
+backend/coverage/
+
+# ─── React / Vite ──────────────────────────────────────────
+frontend/.env
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/*.local
+
+# ─── General ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+.idea/
+.vscode/
