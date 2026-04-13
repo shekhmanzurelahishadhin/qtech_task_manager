@@ -9,12 +9,17 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# 🔥 IMPORTANT: Laravel is inside backend folder
-COPY backend ./backend
+# 🔥 COPY ENTIRE PROJECT
+COPY . .
 
+# 🔥 DEBUG (VERY IMPORTANT)
+RUN ls -la
+RUN ls -la backend
+
+# 🔥 MOVE INTO LARAVEL PROJECT
 WORKDIR /app/backend
 
-RUN composer install
+RUN composer install --no-interaction --prefer-dist
 
 EXPOSE 10000
 
