@@ -9,16 +9,11 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /app
 
-# Copy full project
+# 🔥 IMPORTANT: copy ONLY backend contents (because Render uses backend as context)
 COPY . .
 
-# Debug (optional but useful)
-RUN ls -la backend
+RUN ls -la
 
-# Go into Laravel project
-WORKDIR /app/backend
-
-# Install dependencies in correct folder
 RUN composer install --no-interaction --prefer-dist
 
 EXPOSE 10000
